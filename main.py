@@ -17,11 +17,11 @@ app = FastAPI(
 )
 
 # PostgreSQL configuration
-_DB_HOST = os.getenv("POSTGRES_HOST", "dpg-daul4pp42hec73et8rjg-a.ohio-postgres.render.com")
+_DB_HOST = os.getenv("POSTGRES_HOST", "db_host.com")
 _DB_PORT = int(os.getenv("POSTGRES_PORT", "5432"))
-_DB_NAME = os.getenv("POSTGRES_DB", "brain_db_81ky")
-_DB_USER = os.getenv("POSTGRES_USER", "william")
-_DB_PASSWORD = os.getenv("POSTGRES_PASSWORD", "QPXAaSDcKFFiEIuH9071hpGZ4DHBrc5O")
+_DB_NAME = os.getenv("POSTGRES_DB", "db")
+_DB_USER = os.getenv("POSTGRES_USER", "user")
+_DB_PASSWORD = os.getenv("POSTGRES_PASSWORD", "pass")
 
 def get_db_connection():
     """Create and return a PostgreSQL database connection."""
